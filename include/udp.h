@@ -12,7 +12,7 @@ typedef struct udp_hdr
     uint16_t checksum16;  // 校验和
 } udp_hdr_t;
 
-typedef struct udp_peso_hdr
+typedef struct udp_peso_hdr  //UDP伪头部
 {
     uint8_t src_ip[4];    // 源IP地址
     uint8_t dst_ip[4];    // 目的IP地址
@@ -22,7 +22,7 @@ typedef struct udp_peso_hdr
 } udp_peso_hdr_t;
 #pragma pack()
 
-typedef void (*udp_handler_t)(uint8_t *data, size_t len, uint8_t *src_ip, uint16_t src_port);
+typedef void (*udp_handler_t)(uint8_t *data, size_t len, uint8_t *src_ip, uint16_t src_port);    //处理函数
 
 void udp_init();
 void udp_in(buf_t *buf, uint8_t *src_ip);
