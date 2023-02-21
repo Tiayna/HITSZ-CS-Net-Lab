@@ -1,7 +1,7 @@
 # HITSZ-CS-Net-Lab
 Computer Network Lab——Make by HITSZ
 
-哈工大深圳CS计算机网络课程配套实验：手写协议栈部分及邮件客户端部分
+哈工大深圳CS计算机网络课程配套实验：手写协议栈部分及邮件客户端部分；代码见Branchs->master
 
 一、手写协议栈
 
